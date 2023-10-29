@@ -1,4 +1,4 @@
 package com.example.demo.controller;
 
-public class EmployeeControllerImpl implements EmployeeController{
+public class EmployeeControllerImpl implements EmployeeController {
 }
