@@ -32,6 +32,6 @@ public class Employee {
     @Column(nullable = false)
     private String technology;
 
-    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
-    private Team team;
+    @OneToOne
+    private Manager manager;
 }

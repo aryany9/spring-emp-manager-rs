@@ -23,6 +23,9 @@ public class Manager {
 
     private String lName;
 
-    @OneToMany(mappedBy = "manager", cascade = CascadeType.ALL)
-    private List<Team> team;
+    @OneToOne
+    private Team team;
+
+    @OneToOne
+    private SeniorVP seniorVP;
 }
