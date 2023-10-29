@@ -1,9 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.SeniorVP;
-import com.example.demo.model.Team;
-import com.example.demo.model.request.CreateSeniorVPRequest;
-import com.example.demo.model.request.CreateTeamRequest;
+import com.example.demo.model.request.AddSeniorVPRequest;
+import com.example.demo.model.response.AddSeniorVpResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,7 +25,7 @@ public interface SeniorVpController {
             value = "/seniorVp",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.POST)
-    ResponseEntity<Optional<SeniorVP>> addTeam(@RequestBody CreateSeniorVPRequest seniorVPRequest);
+    ResponseEntity<AddSeniorVpResponse> createSeniorVp(@RequestBody AddSeniorVPRequest seniorVPRequest);
 
     @RequestMapping(
             value = "/seniorVp",

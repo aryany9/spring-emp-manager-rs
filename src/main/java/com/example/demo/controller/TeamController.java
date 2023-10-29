@@ -1,7 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Team;
-import com.example.demo.model.request.CreateTeamRequest;
+import com.example.demo.model.request.AddTeamRequest;
+import com.example.demo.model.response.AddTeamResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ public interface TeamController {
             value = "/team",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.POST)
-    ResponseEntity<Optional<Team>> addTeam(@RequestBody CreateTeamRequest teamRequest);
+    ResponseEntity<AddTeamResponse> addTeam(@RequestBody AddTeamRequest teamRequest);
 
     @RequestMapping(
             value = "/team",

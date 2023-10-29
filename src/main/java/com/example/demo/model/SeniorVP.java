@@ -11,17 +11,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "tbl_seniorVP")
+@Table(name = "tbl_senior_vp")
 public class SeniorVP {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String firstName;
 
     @Column(nullable = false)
-    private String description;
+    private String lastName;
 
     @OneToOne(mappedBy = "seniorVP")
     private Manager manager;
