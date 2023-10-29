@@ -1,8 +1,15 @@
 package com.example.demo.service;
 
 import com.example.demo.model.request.AddTeamRequest;
-import com.example.demo.model.response.AddTeamResponse;
+import com.example.demo.model.response.TeamItemResponse;
+
+import java.util.List;
 
 public interface TeamService {
-    AddTeamResponse addTeam(AddTeamRequest addTeamRequest);
+
+    TeamItemResponse addTeam(AddTeamRequest addTeamRequest);
+
+    TeamItemResponse getTeam(Long id);
+
+    List<TeamItemResponse> getAllTeam();
 }

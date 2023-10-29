@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class AddTeamResponse {
+public class TeamItemResponse {
     @JsonProperty
     private String teamName;
 
