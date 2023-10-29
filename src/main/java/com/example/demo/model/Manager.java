@@ -19,9 +19,9 @@ public class Manager {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String fName;
+    private String firstName;
 
-    private String lName;
+    private String lastName;
 
     @OneToOne
     private Team team;

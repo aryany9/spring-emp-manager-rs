@@ -1,10 +1,7 @@
 package com.example.demo.model.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
@@ -13,14 +10,15 @@ import lombok.NoArgsConstructor;
 public class CreateManagerRequest {
 
     @JsonProperty
-    private String fName;
+    private String firstName;
 
     @JsonProperty
-    private String lName;
+    private String lastName;
 
     @JsonProperty
     private Long seniorVpId;
 
+    @NonNull
     @JsonProperty
     private Long teamId;
 }
