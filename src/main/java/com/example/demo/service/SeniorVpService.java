@@ -1,8 +1,14 @@
 package com.example.demo.service;
 
 import com.example.demo.model.request.AddSeniorVPRequest;
-import com.example.demo.model.response.AddSeniorVpResponse;
+import com.example.demo.model.response.SeniorVpItemResponse;
+
+import java.util.List;
 
 public interface SeniorVpService {
-    AddSeniorVpResponse addSeniorVp(AddSeniorVPRequest addSeniorVPRequest);
+    SeniorVpItemResponse addSeniorVp(AddSeniorVPRequest addSeniorVPRequest);
+
+    List<SeniorVpItemResponse> getAllSeniorVp();
+
+    SeniorVpItemResponse getSeniorVp(Long seniorVpId);
 }

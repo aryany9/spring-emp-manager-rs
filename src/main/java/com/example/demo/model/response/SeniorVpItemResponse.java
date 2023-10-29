@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class AddSeniorVpResponse {
+public class SeniorVpItemResponse {
     @JsonProperty
     private String firstName;
 

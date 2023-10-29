@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.model.SeniorVP;
 import com.example.demo.model.request.AddSeniorVPRequest;
-import com.example.demo.model.response.AddSeniorVpResponse;
+import com.example.demo.model.response.SeniorVpItemResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,17 +19,17 @@ public interface SeniorVpController {
             value = "/seniorVp/{seniorVpId}",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
-    ResponseEntity<Optional<SeniorVP>> getTeam(@PathVariable("seniorVpId") Long seniorVpId);
+    ResponseEntity<SeniorVpItemResponse> getTeam(@PathVariable("seniorVpId") Long seniorVpId);
 
     @RequestMapping(
             value = "/seniorVp",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.POST)
-    ResponseEntity<AddSeniorVpResponse> createSeniorVp(@RequestBody AddSeniorVPRequest seniorVPRequest);
+    ResponseEntity<SeniorVpItemResponse> createSeniorVp(@RequestBody AddSeniorVPRequest seniorVPRequest);
 
     @RequestMapping(
             value = "/seniorVp",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
-    ResponseEntity<List<SeniorVP>> getAllTeam();
+    ResponseEntity<List<SeniorVpItemResponse>> getAllTeam();
 }
