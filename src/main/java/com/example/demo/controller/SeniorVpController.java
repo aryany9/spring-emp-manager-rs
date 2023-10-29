@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.SeniorVP;
 import com.example.demo.model.request.AddSeniorVPRequest;
 import com.example.demo.model.response.SeniorVpItemResponse;
 import org.springframework.http.MediaType;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface SeniorVpController {
 

@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.SeniorVP;
 import com.example.demo.model.request.AddSeniorVPRequest;
 import com.example.demo.model.response.SeniorVpItemResponse;
 import com.example.demo.service.SeniorVpService;
@@ -9,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class SeniorVpControllerImpl implements SeniorVpController {

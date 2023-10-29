@@ -18,10 +18,10 @@ public class Employee {
     private long id;
 
     @Column(nullable = false)
-    private String fName;
+    private String firstName;
 
     @Column(nullable = false)
-    private String lName;
+    private String lastName;
 
     @Column(nullable = false)
     private String department;
